@@ -1,0 +1,136 @@
+# ===============================
+# PYTHON / DJANGO
+# ===============================
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+pytest_cache/
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+
+# Django stuff:
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+media/
+
+# Static files (if collected)
+staticfiles/
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Virtual environments
+venv/
+ENV/
+env/
+.venv/
+
+# ===============================
+# DJANGO REST FRAMEWORK
+# ===============================
+# (No special ignores needed beyond Django)
+
+# ===============================
+# NODE / REACT
+# ===============================
+
+# Node modules
+node_modules/
+
+# Build outputs
+build/
+dist/
+coverage/
+
+# Vite
+.vite/
+
+# Next.js
+.next/
+
+# React logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Lock files (optional - keep if team project)
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
+
+# ===============================
+# IDE / EDITOR
+# ===============================
+
+# VS Code
+.vscode/
+
+# PyCharm / IntelliJ
+.idea/
+*.iml
+
+# Sublime
+*.sublime-workspace
+*.sublime-project
+
+# ===============================
+# OS FILES
+# ===============================
+
+.DS_Store
+Thumbs.db
+
+# ===============================
+# DOCKER
+# ===============================
+
+docker-compose.override.yml
+
+# ===============================
+# MISC
+# ===============================
+
+*.swp
+*.swo
+*~
