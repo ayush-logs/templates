@@ -1,0 +1,15 @@
+git init
+
+git add .
+
+git commit -m "chore: initial django project setup"
+
+git commit -m "feat: add category and product models"
+
+git commit -m "feat: add serializers for category and product"
+
+git commit -m "feat: add product and category viewsets"
+
+git commit -m "feat: add API routing for products and categories"
+
+git commit -m "chore: register models in admin panel"
