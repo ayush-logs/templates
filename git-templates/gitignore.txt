@@ -78,8 +78,6 @@ env/
 node_modules/
 
 # Build outputs
-build/
-dist/
 coverage/
 
 # Vite
