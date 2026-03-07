@@ -1,25 +1,26 @@
-"""
-PostgreSQL Database Configuration Template
-==========================================
+# PostgreSQL Database Configuration Template
 
-Purpose
--------
+**Purpose**
+---
 Standardized configuration for connecting Django to PostgreSQL.
 
-Design Decisions
-----------------
+**Design Decisions**
+---
 1. Environment variables are used for all credentials.
 2. No secrets are stored in source control.
 3. Supports both local development and production.
 4. Compatible with containerized deployments (Docker/Kubernetes).
 5. Optional connection pooling settings included.
 
-Required Packages
------------------
+**Required Packages**
+---
+```python
 pip install psycopg2-binary
+```
 
-Environment Variables Example
----------------------
+**Environment Variables**
+---
+```python
 DB_NAME
 DB_USER
 DB_PASSWORD
@@ -28,15 +29,23 @@ DB_PORT
 
 # Optional
 DB_CONN_MAX_AGE=60
-"""
+```
 
+**Imports**
+---
+```python
 import os
+from pathlib import Path
+from dotenv import load_dotenv
 
+load_dotenv()
 
-# ==========================================================
-# DATABASE CONFIGURATION
-# ==========================================================
+BASE_DIR = Path(__file__).resolve().parent.parent
+```
 
+**Database Configuration**
+---
+```python
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql",
@@ -58,14 +67,6 @@ DATABASES = {
         },
     }
 }
+```
 
-# ==========================================================
-# SETTINGS CONFIGURATION
-# ==========================================================
-import os
-from pathlib import Path
-from dotenv import load_dotenv
 
-load_dotenv()
-
-BASE_DIR = Path(__file__).resolve().parent.parent
