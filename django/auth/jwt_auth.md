@@ -139,3 +139,30 @@ Authorization: Bearer <access_token>
   "access": "new_access_token"
 }
 ```
+
+# Theory
+
+- **Header:** algorithm + token type
+- **Payload:** contains the claims. Claims are statements about the user (like user ID, user roles, expiration time, etc.). There are three types of claims: registered, public, and private.
+- **Signature:** To create the signature, you must take the encoded header, the encoded payload, and a secret key and sign that using the algorithm specified in the header.
+
+```md
+HMACSHA256(  
+	base64(header) + "." + base64(payload),  
+	secret_key  
+)
+```
+
+### Flow Diagram
+![Flow Diagram](https://coredevsltd.com/articles/wp-content/uploads/2023/10/the-flow-diagram-for-JWT-Authentication-in-the-context-of-Asp.net-Core-Web-API.png)
+
+### Algorithm
+- A user provides valid credentials, triggering the server to generate a JWT token.
+- The server sends the token to the client, who stores it securely.
+- The client includes the token in the headers of subsequent requests.
+- The server validates the token’s authenticity and integrity.
+- If valid, the server extracts claims to identify the user and their permissions.
+- The server grants or denies access based on the extracted claims.
+- If tokens expire, the client can request a new token using a refresh token.
+- Tokens can be revoked on the server if necessary.
+
