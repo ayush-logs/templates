@@ -1,0 +1,15 @@
+# core libraries
+django
+djangorestframework
+
+# environment management
+django-environ
+
+# database adapter
+psycopg2-binary
+
+# authentication
+djangorestframework-simplejwt
+
+# documentation
+drf-spectacular
