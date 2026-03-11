@@ -11,6 +11,14 @@ Design Decisions
 3. Harder to scale
 4. Less secure than JWT for public APIs
 
+Implement in 5 Steps
+--
+1. add `rest_framework.authtoken` to installed apps. 
+2. migrate -> creates `authtoken_token` table. 
+3. configure default `authentication` and `permission` class in settings. 
+4. add login endpoint : : `from rest_framework.authtoken.views import obtain_auth_token`
+5. add logout endpoint : : `request.user.auth_token.delete()`
+
 Add Token App
 --
 ```
