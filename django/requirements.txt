@@ -13,3 +13,6 @@ djangorestframework-simplejwt
 
 # documentation
 drf-spectacular
+
+# formatting
+black
