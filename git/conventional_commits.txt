@@ -1,9 +1,0 @@
-``` bash
-chore: bootstrap django project
-
-- initialize django project
-- add requirements.txt
-- add environment configuration (.env.example)
-- configure .gitignore
-- run initial migrations
-```
