@@ -1,4 +1,4 @@
-```bash
+``` bash
 chore: bootstrap django project
 
 - initialize django project
